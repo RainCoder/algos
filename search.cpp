@@ -26,7 +26,7 @@ int main()
    cout<<"To end input type the #-character (followed by Enter)"<<endl<<endl;
 
    cin>>input;
- 
+
     while(input != "#")//read an unknown number of inputs from keyboard
     {
        inputs.push_back(input);
@@ -40,13 +40,13 @@ int main()
       cout<<endl<<"No input received, quiting..."<<endl<<endl;
        exit(1);//nothing to do but quit program
   }
- 
+
    cout<<endl<<"To end input type the #-character (followed by Enter)"<<endl<<endl;
   cout<<"Enter a value to search for: ";
 
 
    cin>>search_key;
- 
+
     while(search_key != "#")//perform searches until sentinel entered
     {
         result = linearSearch(inputs,search_key);
@@ -60,10 +60,20 @@ int main()
 
 
         cout<<endl<<endl<<"Enter a value to search for: ";
-        cin>>search_key; 
+        cin>>search_key;
     }
 
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
 
     return 0;
+}
+
+int linearSearch(auto data, auto key){
+  for( int i = 0; i < data.size();i++){
+
+    if (data[i]== key)
+      return i;
+  }
+
+  return -1;
 }
