@@ -46,7 +46,7 @@ int main()
     
     for(int i = 0; i < inputs.size(); i++)
     {
-		cout << input[i];
+		cout << inputs[i];
 		}
     
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
@@ -55,12 +55,12 @@ int main()
 }
 
 void InsertionSort(auto& data){
-	int minIndex , tmp;
+	 int i, j, minIndex , tmp;
 	
-	for(int i= 0; i < data.size()-1; i++){
-	 minIndex = 1;
+	for(i = 0; i < data.size()-1; i++){
+	 minIndex = i;
 	 
-		for (int j = i + 1; j < data.size(); j++)
+		for (j = i + 1; j < data.size(); j++)
 		{
 			if (data[j] < data[minIndex])
 				minIndex = j;
@@ -73,6 +73,8 @@ void InsertionSort(auto& data){
 			}
 		
 		}
+		
+		return;
 	
 	}
 
