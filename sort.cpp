@@ -44,7 +44,7 @@ int main()
     
   selectionSort(inputs);
     
-    for(int i = 0; i < inputs.size(); i++)
+    for(unsigned int i = 0; i < inputs.size(); i++)
     {
 		cout << inputs[i];
 		}
