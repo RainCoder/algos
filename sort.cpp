@@ -58,6 +58,12 @@ void selectionSort(auto& data){
 	 unsigned int i, j, minIndex;
 	
 	for(i = 0; i < data.size()-1; i++){
+		 
+		 int div = i/20000; 
+		
+		if (div * 20000 == i )
+		{cout << "The number of passes: " << i;}
+		
 	 minIndex = i;
 	 
 		for (j = i + 1; j < data.size(); j++)
