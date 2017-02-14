@@ -12,7 +12,7 @@ using namespace std;
 \param [in] data The data set that will be searched
 \returns location of key if found or -1 if not found
 */
-void InsertionSort(auto& data);//prototype
+void selectionSort(auto& data);//prototype
 
 
 int main()
@@ -42,7 +42,7 @@ int main()
   }
   
     
-  InsertionSort(inputs);
+  selectionSort(inputs);
     
     for(int i = 0; i < inputs.size(); i++)
     {
@@ -54,8 +54,8 @@ int main()
     return 0;
 }
 
-void InsertionSort(auto& data){
-	 int i, j, minIndex , tmp;
+void selectionSort(auto& data){
+	 unsigned int i, j, minIndex , tmp;
 	
 	for(i = 0; i < data.size()-1; i++){
 	 minIndex = i;
@@ -65,7 +65,7 @@ void InsertionSort(auto& data){
 			if (data[j] < data[minIndex])
 				minIndex = j;
 			}
-		if (minIndex !=i)
+		if (minIndex != i)
 		{
 			tmp = data[i];
 			data[i] = data[minIndex];
