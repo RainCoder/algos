@@ -55,7 +55,7 @@ int main()
 }
 
 void selectionSort(auto& data){
-	 unsigned int i, j, minIndex , tmp;
+	 unsigned int i, j, minIndex;
 	
 	for(i = 0; i < data.size()-1; i++){
 	 minIndex = i;
@@ -66,11 +66,7 @@ void selectionSort(auto& data){
 				minIndex = j;
 			}
 		if (minIndex != i)
-		{
-			tmp = data[i];
-			data[i] = data[minIndex];
-			data[minIndex] = tmp;
-			}
+			swap(data[minIndex], data[i]);
 		
 		}
 		
