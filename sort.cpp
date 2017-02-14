@@ -42,7 +42,7 @@ int main()
   }
   
     
-  InsertionSort(auto& inputs);
+  InsertionSort(inputs);
     
     for(int i = 0; i < inputs.size(); i++)
     {
