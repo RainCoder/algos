@@ -46,7 +46,7 @@ int main()
     
     for(unsigned int i = 0; i < inputs.size(); i++)
     {
-		cout << inputs[i];
+		cout << inputs[i] << " ";
 		}
     
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
