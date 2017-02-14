@@ -25,12 +25,12 @@ int main()
    cout<<"We'll assume the inputs do not have any spaces."<<endl<<endl;
    cout<<"To end input type the #-character (followed by Enter)"<<endl<<endl;
 
-   cin>>input;
+   getline(cin,input);
 
     while(input != "#")//read an unknown number of inputs from keyboard
     {
        inputs.push_back(input);
-       cin>>input;
+    getline(cin,input);
     }
 
    cout<<endl<<"["<<inputs.size()<<" values read from input source]"<<endl<<endl;
