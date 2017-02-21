@@ -59,10 +59,10 @@ void selectionSort(auto& data){
 
 	for(i = 0; i < data.size()-1; i++){
 
-		 int div = i%2;
+		 int div = i%20000;
 
 		if (div == 0 )
-		{cout << "The number of passes: " << i/2 << endl;}
+		{cout << "The number of passes: " << i/20000 << endl;}
 
 	 minIndex = i;
 
