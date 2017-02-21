@@ -40,15 +40,15 @@ int main()
       cout<<endl<<"No input received, quiting..."<<endl<<endl;
        exit(1);//nothing to do but quit program
   }
-  
-     
+
+
   selectionSort(inputs);
-    
+
     for(unsigned int i = 0; i < inputs.size(); i++)
     {
 		cout << inputs[i] << " ";
 		}
-    
+
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
 
     return 0;
@@ -56,26 +56,22 @@ int main()
 
 void selectionSort(auto& data){
 	 unsigned int i, j, minIndex;
-	
+
 	for(i = 0; i < data.size()-1; i++){
-		 
-		 int div = i%20000; 
-		
+
+		 int div = i%20000;
+
 		if (div == 0 )
 		{cout << "The number of passes: " << div;}}
-		
+
 	 minIndex = i;
-	 
+
 		for (j = i + 1; j < data.size(); j++)
-		{	
+		{
 	 if (data[j] < data[minIndex])
 				minIndex = j;
 			}
 		if (minIndex != i)
 			swap(data[minIndex], data[i]);
-		
+
 		}
-		
-		return;
-	
-	}
