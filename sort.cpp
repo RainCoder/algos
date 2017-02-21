@@ -59,7 +59,7 @@ void selectionSort(auto& data){
 
 	for(i = 0; i < data.size()-1; i++){
 
-		 int div = i%20000;
+		 int div = i%2;
 
 		if (div == 0 )
 		{cout << "The number of passes: " << div << endl;}
