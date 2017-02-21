@@ -62,7 +62,7 @@ void selectionSort(auto& data){
 		 int div = i%20000;
 
 		if (div == 0 )
-		{cout << "The number of passes: " << div;}}
+		{cout << "The number of passes: " << div << endl;}
 
 	 minIndex = i;
 
@@ -75,3 +75,4 @@ void selectionSort(auto& data){
 			swap(data[minIndex], data[i]);
 
 		}
+  }
