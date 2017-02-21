@@ -41,20 +41,7 @@ int main()
        exit(1);//nothing to do but quit program
   }
   
-     i, j, minIndex;
-	
-	for(i = 0; i < data.size()-1; i++){
-		 
-		 int div = i%20000; 
-		
-		if (div == 0 )
-		{cout << "The number of passes: " << div;}
-		
-	 minIndex = i;
-	 
-		for (j = i + 1; j < data.size(); j++)
-		{
-
+     
   selectionSort(inputs);
     
     for(unsigned int i = 0; i < inputs.size(); i++)
@@ -68,7 +55,20 @@ int main()
 }
 
 void selectionSort(auto& data){
-	 unsigned int			if (data[j] < data[minIndex])
+	 unsigned int i, j, minIndex;
+	
+	for(i = 0; i < data.size()-1; i++){
+		 
+		 int div = i%20000; 
+		
+		if (div == 0 )
+		{cout << "The number of passes: " << div;}}
+		
+	 minIndex = i;
+	 
+		for (j = i + 1; j < data.size(); j++)
+		{	
+	 if (data[j] < data[minIndex])
 				minIndex = j;
 			}
 		if (minIndex != i)
