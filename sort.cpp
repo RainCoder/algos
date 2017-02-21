@@ -48,7 +48,7 @@ int main()
 		 int div = i%20000; 
 		
 		if (div == 0 )
-		{cout << "The number of passes: " << i;}
+		{cout << "The number of passes: " << div;}
 		
 	 minIndex = i;
 	 
